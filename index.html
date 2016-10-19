@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Flexbox на практике</title>
+		<meta charset="utf-8">
+		<style>
+			body{
+				background: #fefefe; 
+				margin: 0; 
+				padding: 0;
+				font:1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+				color: #272727;
+			}
+			img{
+				margin: 0; 
+				padding: 0; 
+				vertical-align: middle; 
+				border: none;
+			}
+			.main{
+				margin: 20px; 
+				border: 1px solid #ccc; 
+				padding: 20px; 
+				background: #fff; 
+				border-radius: 3px;
+			}
+			.bl{
+				padding: 5px 10px; 
+				border:1px solid #ddd; 
+				background: #fffde1; 
+				border-radius: 3px;
+				margin: 20px;
+			}
+
+
+
+			.main {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				max-width: 1000px;
+				margin: 20px auto;
+				/*flex-direction: row;*/
+				/*flex-wrap: wrap;*/
+				justify-content: center;
+				align-items:stretch;
+				align-content: stretch;
+				flex-flow: row wrap;
+
+			}
+			.bl {
+				/*flex-basis: 300px;
+				flex-grow: 1;
+				flex-shrink: 1;*/ 
+				flex: 1 1 200px;
+				text-align: center;
+				
+			}
+			.fl1 {
+				background: #6ACFDB;
+				border-color: #951212;
+				order: 5;
+				flex-basis: 300px;
+
+			}
+			.fl2 {
+				background: #006705;
+				border-color: #951212;
+				order: 3;
+				/*flex-grow: 2;
+				flex-shrink: 2;*/
+				flex-basis: 150px;
+			}
+			.fl3 {
+				background: #05F226;
+				border-color: #951212;
+				order: 1;
+				flex-basis: 100%;
+				
+			}
+			.fl4 {
+				background: #007605;
+				border-color: #274B0A;
+				order: 2;
+				flex-basis: 100%;
+			}
+			.fl5 {
+				background: #006705;
+				border-color: #951212;
+				order: 6;
+				flex-basis: 300px;
+			}			
+			.fl6 {
+				background: #D8C512;
+				border-color: #951212;
+				order: 4;
+				flex-basis: 400px;
+				flex-grow: 3;
+		</style>
+	</head>
+
+	<body>
+	
+		<div class="main">
+			<div class="bl fl1"><b>Подвал 1</b><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente libero hic ad molestias accusamus quasi voluptas maiores iste a ea!</div>
+			<div class="bl fl2"><b>Левый сайдбар</b><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio facere doloremque aperiam vitae doloribus ea hic adipisci, dolore porro.</div>
+			<div class="bl fl3"><b>Меню</b><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat error deleniti reiciendis temporibus laborum, est earum possimus repellendus officiis sunt?</div>
+			<div class="bl fl4"><b>Шапка</b><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui nostrum, sunt architecto quasi hic, totam modi repellendus dolores tenetur quidem!</div>
+			<div class="bl fl5"><b>Подвал 2</b><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste laudantium perspiciatis aliquam harum id accusantium, odit voluptatibus illo dignissimos fugit.</div>
+			<div class="bl fl6"><b>Контент</b><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nam porro consequatur vero deserunt, officiis rerum omnis consectetur nesciunt soluta!</div>
+		</div>
+	
+	</body>
+</html>
